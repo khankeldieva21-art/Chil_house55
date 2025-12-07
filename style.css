@@ -1,0 +1,544 @@
+.menu {
+  background-color: white;  
+  padding: 15px 0;        /* отступ сверху и снизу */
+}
+
+.menu .ul-1 {
+  display: flex;          
+  justify-content: center; /* выравнивает всё по центру */
+  align-items: center;     /* выравнивает по вертикали */
+  list-style: none;        
+  margin: 0;
+  padding: 0;
+  gap: 40px;               /* расстояние между пунктами */
+}
+
+.menu .li-1 {
+  color: black;
+  font-size: 18px;
+  font-weight: 20px;
+  cursor: pointer;         /* делает курсор “рукой” */
+}
+
+.menu .li-1:hover {
+  color: #ffcc00;          /* при наведении меняется цвет */
+}
+
+.menu .logo img {
+  width: 80px;
+  height: auto;
+  background-color: white;     /* делает логотип круглым */
+}
+.rectangle{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  height: 180px;
+  background-color:black;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 10px;
+  color: white;
+}
+.menu a{
+  color: black;
+}
+.menu a:hover {
+  color: #ffe852;         /* цвет при наведении */
+}
+.rectangle p{
+  font-size: 25px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+
+.button{
+  position: absolute;
+  top: -15px;    /* Отступ сверху */
+  right: -15px;  /* Отступ справа */
+  background-color: red;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.main{
+  background-color: #e8e8e8;
+  width: auto;
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  display: flex;               /* делаем flex-контейнер */
+  justify-content: center;     /* по горизонтали */
+  align-items: center;         /* по вертикали */
+  flex-direction: column;
+}
+.main h1{
+  font-size: 44px;
+  font-weight: bold;
+  color:#213155;
+}
+.main p{
+  font-size: 18px ;
+  color: #4f4f4f;
+}
+.btn{
+  background-color: #ffe852; 
+  border: none;              
+  padding: 15px 30px;        /* отступы внутри кнопки */
+  font-size: 14px;           
+  border-radius: 40px;       
+  cursor: pointer;          
+  margin-top: 30px;          /* отступ сверху от текста */
+  font-size: 20px;
+  color: black;
+}
+.onas{
+  text-align: center;
+  padding: 30px;
+
+}
+.yellow {
+  font-size: 20px ;
+  font-weight: bold;
+}
+.onas h1{
+  font-size: 60px ;
+  font-weight: bold;
+}
+.red{
+  font-size: 22px;
+  line-height: 1.5;
+}
+.main-1{
+  width: auto;
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  display: flex;               /* делаем flex-контейнер */
+  justify-content: center;     /* по горизонтали */
+  align-items: center;         /* по вертикали */
+  flex-direction: column;
+  background-color:#ffe852;
+}
+.main-1 h1{
+  font-size: 44px;
+  font-weight: bold;
+  color:#213155;
+  border-bottom: 7px solid white;
+
+}
+.main-3{
+  width: auto;
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  display: flex;               /* делаем flex-контейнер */
+  justify-content: center;     /* по горизонтали */
+  align-items: center;         /* по вертикали */
+  flex-direction: column;
+}
+.main-3 h1{
+  font-size: 44px;
+  font-weight: bold;
+  color:#213155;
+  border-bottom: 7px solid #ffe852;
+
+}
+.table-1{
+  background-color: #ffe852;
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.tab-1, .tr-1, .th-1{
+  background-color: white;
+  color: black;
+  border: 5px solid #ffe852;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+table{
+  width: 80%;
+}
+.h1-1{
+  background-color: #ffe852;
+  width: auto;
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  display: flex;               /* делаем flex-контейнер */
+  justify-content: center;     /* по горизонтали */
+  align-items: center;         /* по вертикали */
+  flex-direction: column;
+  font-size: 35px;
+}
+.table-2{
+  background-color: white;
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.tab-2, .tr-2, .td-2, .th-2{
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.h1-2{
+  background-color: white;
+  width: auto;
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  display: flex;               /* делаем flex-контейнер */
+  justify-content: center;     /* по горизонтали */
+  align-items: center;         /* по вертикали */
+  flex-direction: column;
+  font-size: 35px;
+}
+.opisanie{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+  border-bottom:4px solid  #ffe852;
+  padding-bottom: 40px;
+}
+.ul-2, .li-2 {
+  list-style-position: inside;
+  text-align: center;
+}
+.h1-3{
+  text-align: center;
+  padding:  35px;
+}
+.ul-3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 90px;
+  padding-right: 100px;
+  justify-content: center;
+  margin: 0;
+  column-gap: 50px;
+}
+.li-3{
+  display: flex;
+  align-items: flex-start;
+  max-width: 600px;
+  flex-direction: row;
+  font-size: 18px;
+  padding: 0;
+}
+.li-3 img{
+  width: 50px;
+  padding-right:50px ;
+}
+.li-3 h3{
+  margin: 0;
+}
+.li-3 p{
+  margin-top:10px;
+}
+.li-3 .text{
+  display: flex;
+  flex-direction: column;
+}
+.ul-4{
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0;
+  gap: 30px;
+}
+.aksia{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.aksia h1{
+  padding: 10px;
+  font-size: 45px;
+  text-align: center;
+}
+.aksia h3{
+  padding-bottom: 20px;
+  font-weight: 6px;
+  font-size: 30px;
+}
+.li-4 img{
+  width: 75px;
+  height: 80px;
+}
+.li-4{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.text-2{
+  display: flex;
+  flex-direction: column;
+}
+.text-2 h3{
+  margin: 0;
+  padding: 15px;
+  font-size: 25px;
+
+}
+.text-2 p{
+  margin-top: 5px;
+  font-size: 20px;
+}
+.main-2{
+  background-color:#ffe852 ;
+}
+.h1-4{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  padding: 100px;
+  text-align: center;
+}
+.h1-4 h1{
+  font-size: 45px;
+}
+.h1-4 p{
+  font-size:30px;
+}
+.ul-5{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 50px;
+  padding-left: 250px;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.li-5{
+  width: calc(33.33% - 40px);
+  display: flex;
+  flex-direction:column;
+  column-gap: 50px;
+}
+.li-5 img{
+  width: 250px;
+  margin-left: -70px;
+}
+.text-3{
+  display: flex;
+  flex-direction: column;
+  padding-right: 28px;
+}
+.text-3 p{
+  font-size: 23px;
+}
+.text-3 h1{
+  font-size: 50px;
+}
+.vopros{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: auto;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.btn-1 i{
+  font-size: 40px;
+}
+.btn-2 i{
+  font-size: 40px;
+}
+.btn-3 i{
+  font-size: 40px;
+}
+.btn-4 i{
+  font-size: 40px;
+}
+.vopros p{
+  font-size: 20px;
+}
+.vopros img{
+  width: 850px;
+}
+.vopros-1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: -60px;
+}
+.btn-1{ 
+  border: none;              
+  padding: 20px 75px;        /* отступы внутри кнопки */
+  font-size: 14px;
+  border-radius: 15px;                 
+  cursor: pointer;          
+  margin-right: 20px;
+  background-color:#3b5998;
+  color: white;
+}
+.btn-2{ 
+  border: none;             
+  padding: 20px 75px;        /* отступы внутри кнопки */
+  font-size: 14px;
+  border-radius: 15px;                 
+  cursor: pointer;          
+  margin-right: 20px;
+  background-color:#239BD6 ;
+  color: white;
+}
+.btn-3{ 
+  border: none;              
+  padding: 20px 75px;        /* отступы внутри кнопки */
+  font-size: 14px;
+  border-radius: 15px;                 
+  cursor: pointer;          
+  margin-right: 20px;
+  background-color:#27d061 ;
+  color: white;
+}
+.btn-4{ 
+  border: none;              
+  padding: 20px 75px;        /* отступы внутри кнопки */
+  font-size: 14px;
+  border-radius: 15px;                 
+  cursor: pointer;          
+  margin-right: 20px;
+  background-color:#f00075 ;
+  color: white;
+}
+.collical{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.forma{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 550px;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+form{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 500px;
+  min-height: 400px;
+  padding-bottom: 20px;
+
+}
+.forma button{
+  background-color: #ffe852;
+  border-radius: 20px;
+  height: 45px;
+  border: 2px solid white;
+}
+.forma p{
+  font-size: 13px;
+}
+.forma input{
+  height: 40px;
+  border-radius: 10px;
+}
+.spisak{
+  display: flex;
+  justify-content: center;
+  background-color: #ffe852;
+  width: 100%;
+  font-size: 14px;
+}
+.ul-6{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 300px;
+  width: 1000px;
+  justify-content: space-between;
+}
+.li-6{
+  display: flex;
+  flex-direction: row;
+  width: auto; 
+  gap: 20px;
+}
+.li-6 img{
+  width: 170px;
+  height: 100px;
+  padding-top: 40px;
+}
+.picture{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.picture img{
+  width: 350px;
+  height: 400px;
+  padding-left: 100px;
+}
+.picture-1{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color:#ffe852; 
+}
+.picture-1 img{
+  width: 350px;
+  height: 400px;
+  padding-left: 100px;
+}
+.text-4{
+  display: flex;
+  flex-direction: column;
+}
+.text-4 h2{
+  font-size: 30px;
+}
+.text-4 p{
+  font-size: 15px;
+}
+.map{
+  width: 100%;
+  max-width: 2000px;   /* ширина карты */
+  margin: 0 auto;     /* центрирование */
+  border-radius: 15px;
+  overflow: hidden;   /* чтобы скругление работало */
+}
+
+.map iframe{
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
