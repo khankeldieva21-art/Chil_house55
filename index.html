@@ -6,27 +6,11 @@
 	<title>ChilHouse</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105720965', 'ym');
-
-    ym(105720965, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105720965" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-
-
+	<!-- Yandex.Metrika counter --> <script type="text/javascript">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105720965', 'ym');      ym(105720965, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true}); </script> <noscript><div><img src="https://mc.yandex.ru/watch/105720965" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-	
-	
+
+	<nav class="menu">
   <ul class="ul-1">
     <li class="li-1"><a href="#predmety">Предметы</a></li>
     <li class="li-1"><a href="#ychitel">Учителя</a></li>
@@ -51,8 +35,6 @@
       <center><p>Стой!!!<br>
       Хочешь получить скидку в 100 %.</p></center>
     </div>
-
-	<nav class="menu">
  <div class="onas">
  	<p class="yellow">Т Е Л Е Ф О Н:  + 996 557 70  90    | EMAIL:CHIL.HOUSE@GMAIL.COM </p>
  	<h1>О нас</h1>
@@ -384,31 +366,24 @@
 	<section id="formaa">
 	<div class="forma">
 		<h1>Запишитесь в группу или на <br> консультацию сейчас!</h1><br>
-		<form action="https://formspree.io/f/xrbnabqb" method="POST">
+		<form action="https://formspree.io/f/xrbnabqb"
+  method="POST">
+			<input type="text" placeholder="ФИО" name="Email"> <br><br>
+			<input type="email" placeholder="Email" name="Email"> <br> <br>
+			<input type="tel" placeholder="Phone" name="Email"><br> <br>
+			<input list="Выбор курсов" name="Email">
+			<datalist id="Выбор курсов">
+				<option value="IT - для детей"></option>
+				<option value="Английский язык"></option>
+				<option value="Творческая мастерская"></option>
+				<option value="Театральные студии"></option>
+				<option value="Научные эксперименты"></option>
+				<option value="ЯВыберу курс"></option>
+			</datalist><br><br>
+			<button type="button">Отправить заявку</button>
+			<p>Нажимая «Отправить заявку», вы соглашаетесь с политикой обработки персональных данных</p>
 
-    <input type="text" name="full_name" placeholder="ФИО" required><br><br>
-
-    <input type="email" name="email" placeholder="Email" required><br><br>
-
-    <input type="tel" name="phone" placeholder="Phone" required><br><br>
-
-    <input list="kurse" name="course" placeholder="Выбор курсов" required>
-    <datalist id="kurse">
-        <option value="IT - для детей"></option>
-        <option value="Английский язык"></option>
-        <option value="Творческая мастерская"></option>
-        <option value="Театральные студии"></option>
-        <option value="Научные эксперименты"></option>
-        <option value="Я выберу курс позже"></option>
-    </datalist>
-    <br><br>
-
-    <button type="submit">Отправить заявку</button>
-
-    <p>Нажимая «Отправить заявку», вы соглашаетесь с политикой обработки персональных данных</p>
-
-</form>
-
+		</form>
 	</div>
 	</section>
 	<div class="spisak">
@@ -436,24 +411,7 @@
     allowfullscreen="true">
   </iframe>
 </div>
-		
-
-
-
 
 	
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
