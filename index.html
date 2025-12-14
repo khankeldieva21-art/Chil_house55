@@ -433,11 +433,28 @@
     allowfullscreen="true">
   </iframe>
 </div>
+		<button id="start">Говорить</button>
+<p id="text"></p>
+
+<script>
+const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+recognition.lang = "ru-RU";
+
+document.getElementById("start").onclick = () => {
+  recognition.start();
+}
+
+recognition.onresult = function(event) {
+  document.getElementById("text").textContent = event.results[0][0].transcript;
+}
+</script>
+
 
 	
 </body>
 
 </html>
+
 
 
 
