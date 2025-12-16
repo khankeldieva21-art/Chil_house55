@@ -368,26 +368,32 @@
 	</section>
 	</section>
 	<section id="formaa">
-	<div class="forma">
-		<h1>Запишитесь в группу или на <br> консультацию сейчас!</h1><br>
-		<form action="https://formspree.io/f/xrbnabqb"
-  method="POST">
-			<input type="text" placeholder="ФИО" name="Email"> <br><br>
-			<input type="email" placeholder="Email" name="Email"> <br> <br>
-			<input type="tel" placeholder="Phone" name="Email"><br> <br>
-			<input list="Выбор курсов" name="Email">
-			<datalist id="Выбор курсов">
-				<option value="IT - для детей"></option>
-				<option value="Английский язык"></option>
-				<option value="Творческая мастерская"></option>
-				<option value="Театральные студии"></option>
-				<option value="Научные эксперименты"></option>
-				<option value="ЯВыберу курс"></option>
-			</datalist><br><br>
-			<button type="button">Отправить заявку</button>
-			<p>Нажимая «Отправить заявку», вы соглашаетесь с политикой обработки персональных данных</p>
-
-		</form>
+    <div class="forma">
+        <h1>Запишитесь в группу или на <br> консультацию сейчас!</h1><br>
+        
+        <form action="https://formspree.io/f/xrbnabqb" method="POST">
+            <input type="text" placeholder="ФИО" name="full_name" required> <br><br>
+            
+            <input type="email" placeholder="Email" name="email" required> <br> <br>
+            
+            <input type="tel" placeholder="Телефон" name="phone" required><br> <br>
+            
+            <input list="courses" name="course" placeholder="Выберите курс">
+            <datalist id="courses">
+                <option value="IT - для детей"></option>
+                <option value="Английский язык"></option>
+                <option value="Творческая мастерская"></option>
+                <option value="Театральные студии"></option>
+                <option value="Научные эксперименты"></option>
+                <option value="Я выберу курс позже"></option>
+            </datalist><br><br>
+            
+            <button type="submit">Отправить заявку</button>
+            
+            <p>Нажимая «Отправить заявку», вы соглашаетесь с политикой обработки персональных данных</p>
+        </form>
+    </div>
+</section>
 	</div>
 	</section>
 	<div class="spisak">
@@ -419,6 +425,7 @@
 	
 </body>
 </html>
+
 
 
 
