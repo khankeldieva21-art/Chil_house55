@@ -427,9 +427,7 @@
     allowfullscreen="true">
   </iframe>
 </div>
-
-	
-</body>
+<script>
 	const voiceBtn = document.getElementById('voice-assistant');
 const statusBox = document.getElementById('voice-status');
 
@@ -479,7 +477,11 @@ function speak(text) {
     utterance.lang = 'ru-RU';
     window.speechSynthesis.speak(utterance);
 }
+	</script>
+</body>
+	
 </html>
+
 
 
 
