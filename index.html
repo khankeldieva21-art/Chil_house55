@@ -369,21 +369,6 @@
 	</section>
 	<section id="formaa">
     <div class="forma">
-		<div class="payment-selection">
-    <p>Выберите способ оплаты:</p>
-    <div class="bank-options">
-        <label class="bank-item">
-            <input type="radio" name="payment_method" value="MBank" required>
-            <img src="https://play-lh.googleusercontent.com/97Yvj4mX8N7r..." alt="MBank">
-            <span>Мбанк</span>
-        </label>
-        <label class="bank-item">
-            <input type="radio" name="payment_method" value="O-Bank" required>
-            <img src="https://o.kg/upload/iblock/..." alt="O-Bank">
-            <span>O-Bank</span>
-        </label>
-    </div>
-</div>
         <h1>Запишитесь в группу или на <br> консультацию сейчас!</h1><br>
         
         <form action="https://formspree.io/f/xrbnabqb" method="POST">
@@ -430,72 +415,17 @@
 			</li>
 		</ul>
 	</div>
-	<div id="voice-assistant" class="voice-btn">
-    <i class="fas fa-microphone"></i>
-    <span class="voice-tooltip">Нажми и спроси!</span>
-</div>
-
-<div id="voice-status" class="voice-status-hidden"></div>
 	<div class="map">
   <iframe 
     src="https://yandex.com/map-widget/v1/?ll=72.773214%2C40.513812&z=15"
     allowfullscreen="true">
   </iframe>
 </div>
-<script>
-	const voiceBtn = document.getElementById('voice-assistant');
-const statusBox = document.getElementById('voice-status');
 
-// Проверка поддержки браузером
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-if (SpeechRecognition) {
-    const recognition = new SpeechRecognition();
-    recognition.lang = 'ru-RU';
-
-    voiceBtn.addEventListener('click', () => {
-        recognition.start();
-        voiceBtn.classList.add('listening');
-    });
-
-    recognition.onresult = (event) => {
-        const command = event.results[0][0].transcript.toLowerCase();
-        voiceBtn.classList.remove('listening');
-        
-        statusBox.innerText = "Вы сказали: " + command;
-        statusBox.className = "voice-status-show";
-
-        // ЛОГИКА КОМАНД
-        if (command.includes('it') || command.includes('айти') || command.includes('программирование')) {
-            document.getElementById('predmety').scrollIntoView({behavior: "smooth"});
-            speak("Перевожу вас в раздел IT курсов");
-        } 
-        else if (command.includes('акция') || command.includes('скидка')) {
-            document.getElementById('aksiaa').scrollIntoView({behavior: "smooth"});
-            speak("У нас отличные скидки до ста процентов!");
-        }
-        else if (command.includes('учитель') || command.includes('преподаватель')) {
-            document.getElementById('ychitel').scrollIntoView({behavior: "smooth"});
-            speak("Познакомьтесь с нашей командой профессионалов");
-        }
-        else if (command.includes('записать') || command.includes('форма')) {
-            document.getElementById('formaa').scrollIntoView({behavior: "smooth"});
-            speak("Пожалуйста, заполните анкету для записи");
-        }
-
-        setTimeout(() => { statusBox.className = "voice-status-hidden"; }, 3000);
-    };
-}
-
-function speak(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ru-RU';
-    window.speechSynthesis.speak(utterance);
-}
-	</script>
 </body>
 	
 </html>
+
 
 
 
