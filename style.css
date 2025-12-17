@@ -2,41 +2,6 @@
   background-color: white;  
   padding: 15px 0;        /* отступ сверху и снизу */
 }
-.payment-selection {
-    margin: 20px 0;
-    text-align: left;
-}
-.bank-options {
-    display: flex;
-    gap: 15px;
-    justify-content: space-around;
-}
-.bank-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    border: 2px solid #eee;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
-    width: 45%;
-}
-.bank-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
-}
-.bank-item input {
-    margin-bottom: 10px;
-}
-.bank-item:hover {
-    border-color: #ffe852;
-}
-/* Стиль для выбранного банка */
-.bank-item input:checked + img + span {
-    font-weight: bold;
-}
 .menu .ul-1 {
   display: flex;          
   justify-content: center; /* выравнивает всё по центру */
@@ -740,49 +705,8 @@ form{
         padding-top: 0;
     }
 }
-.voice-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #ffe852;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    z-index: 1000;
-    font-size: 24px;
-    transition: transform 0.3s;
-}
 
-.voice-btn:hover { transform: scale(1.1); }
 
-.voice-btn.listening {
-    background-color: #ff4747;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(255, 71, 71, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(255, 71, 71, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 71, 71, 0); }
-}
-
-.voice-status-hidden { display: none; }
-.voice-status-show {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-}
-  
 
 
 
